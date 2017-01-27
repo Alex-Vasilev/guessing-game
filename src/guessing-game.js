@@ -37,19 +37,19 @@ class GuessingGame {
 //    }
 
     guess() {
-        this.result = Math.round((this.first + this.last) / 2);
+        this.result = Math.round((this.min + this.max) / 2);
 
         return this.result;
     }
 
     lower() {
-        this.last = this.result;
+        this.max = this.result;
 
         return this;
     }
 
     greater() {
-        this.first = this.result;
+        this.min = this.result;
 
         return this;
     }
