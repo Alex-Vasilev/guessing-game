@@ -16,11 +16,11 @@ class GuessingGame {
 
     guess() {
         
-            return (((function randomInteger(min, max) {
+            return ((function randomInteger(min, max) {
         var rand = min + Math.random() * (max - min);
                 rand = Math.round(rand);
                 return rand;
-        })(this.min, this.max)));
+        })(this.min, this.max));
 //        console.log(this.number)
     }
 
