@@ -1,11 +1,12 @@
 class GuessingGame {
     constructor() {
-        this.number;
+//        this.number;
     }
 
     setRange(min, max) {
 //        var self = this;
-        return this.number = ((function randomInteger(min, max) {
+  var result;
+        return result = ((function randomInteger(min, max) {
         var rand = min + Math.random() * (max - min);
                 rand = Math.round(rand);
                 return rand;
