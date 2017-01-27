@@ -1,8 +1,8 @@
 class GuessingGame {
     constructor() {
-//        this.number;
-      this.min;
-      this.max;
+        this.result = null;
+      this.min = null;
+      this.max = null;
         
     }
 
@@ -12,15 +12,19 @@ class GuessingGame {
 //        console.log(this.number)
       this.min = min;
       this.max = max;
+      
+      return this;
     }
 
     guess() {
         
-            return ((function randomInteger(min, max) {
+            this.result = ((function randomInteger(min, max) {
         var rand = min + Math.random() * (max - min);
                 rand = Math.round(rand);
                 return rand;
         })(this.min, this.max));
+//        console.log(this.result)
+        return this.result;
 //        console.log(this.number)
     }
 
